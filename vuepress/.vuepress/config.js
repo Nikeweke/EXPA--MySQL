@@ -1,56 +1,65 @@
 module.exports = {
-  title: 'Angular',
-  description: 'Experience from angular world',
-  base: '/EXPA--Angular/',
+  title: 'MySQL',
+  description: 'Experience from mysql world',
+  base: '/EXPA--MySQL/',
   dest: '../docs',
 
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      // { text: 'Guide', link: '/guide/' },
-      // { text: 'External', link: 'https://google.com' },
     ],
     sidebar: [
-      {
-        title: 'Basic',
-        collapsable: true,
-        children: [
-          '/intro/angular-cli.md',
-          '/intro/angular-project.md',
-          '/intro/typescript.md',
-        ]
-      },
+      '/introduction.md',
+      '/basic.md',
+      '/update.md',
+      '/delete.md',
+      '/console.md',
+      '/create-tables.md',
       {
         title: 'Insert',
         collapsable: true,
         children: [
-          '/intro/angular-cli.md',
-          '/intro/angular-project.md',
-          '/intro/typescript.md',
+          '/insert/intro.md',
+          '/insert/insert-select.md',
         ]
       },
       {
         title: 'Select',
         collapsable: true,
         children: [
-          '/intro/angular-cli.md',
-          '/intro/angular-project.md',
-          '/intro/typescript.md',
+          '/select/intro.md',
+          '/select/select-into.md',
+          '/select/order-by.md',
+          '/select/group-by-having.md',
+          '/select/where.md',
+          '/select/join.md',
+          '/select/metasymbols.md',
+          '/select/concat-adding.md',
+          '/select/podzaprosi.md',
+          '/select/union.md',
+          '/select/obedinenie.md',
         ]
       },
-      '/update.md',
-      '/delete.md',
-      '/console.md',
+      {
+        title: 'Select Functions',
+        collapsable: true,
+        children: [
+          '/select/functions/upper.md',
+          '/select/functions/math-fns.md',
+        ]
+      },
       {
         title: 'Advanced',
         collapsable: true,
         children: [
-          '/intro/angular-cli.md',
-          '/intro/angular-project.md',
-          '/intro/typescript.md',
+          '/advanced/cursor.md',
+          '/advanced/index-db.md',
+          '/advanced/procedure.md',
+          '/advanced/transaction.md',
+          '/advanced/triggers.md',
+          '/advanced/view.md',
         ]
       },
-
     ]
   }
 }

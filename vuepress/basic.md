@@ -1,16 +1,18 @@
-#### CREATE DB
+# Basic
+
+## CREATE DB
 
 ```sql
 CREATE DATABASE db_name
 ```
 
-#### USE DB
+## USE DB
 
 ```sql
 USE db_name
 ```
 
-#### CREATE TABLE
+## CREATE TABLE
 
 ```sql
 CREATE TABLE EMPLOYEES (
@@ -37,19 +39,19 @@ CREATE TABLE PRODUCTS (
  -----------------------
  ```
 
-#### DEL COLUMN
+## DEL COLUMN
 
 ```sql
 ALTER TABLE alfa DROP COLUMN gr_phone
 ```
 
-#### ADD NEW COL
+## ADD NEW COL
 
 ```sql
 ALTER TABLE alfa ADD gr_phone char(20)
 ```
 
-#### DROP DB & TABLE
+## DROP DB & TABLE
 
 ```sql
 DROP DATABASE LATRELL

@@ -1,4 +1,4 @@
-## CONSOLE COMMANDS
+# Console commands
 * `mysql -u root -p '2222'` - Вход в Mysql
 * `USE my_DB;` - Выбрать БД
 * `SELECT * FROM TABLE` - Показать записи из таблицы

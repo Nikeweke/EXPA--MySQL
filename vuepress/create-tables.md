@@ -1,4 +1,4 @@
-## Example of creating tables
+# Example of creating tables
 
 ```sql
 --------------------------------------------------

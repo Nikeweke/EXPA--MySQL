@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TRIGGERS | MySQL</title>
+    <meta name="description" content="Experience from mysql world">
+    
+    
+    <link rel="preload" href="/EXPA--MySQL/assets/css/0.styles.d564d83c.css" as="style"><link rel="preload" href="/EXPA--MySQL/assets/js/app.23539bff.js" as="script"><link rel="preload" href="/EXPA--MySQL/assets/js/8.5bf9313b.js" as="script"><link rel="prefetch" href="/EXPA--MySQL/assets/js/16.44083d8a.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/2.cda51ec0.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/3.dba5fc01.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/4.e3ce86be.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/5.9be58503.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/6.bc861c9e.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/7.306e4e9c.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/9.b53ab606.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/10.a2e9b4f3.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/11.b9a1ec5c.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/12.55e82e8f.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/13.c7364eab.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/14.925ecda4.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/15.79d6dcd2.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/17.9d21fb7f.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/18.ba0f6af9.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/19.7dbbcf79.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/20.ee07d1d3.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/21.b628a6e4.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/22.881d8659.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/23.a8b92454.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/24.26ad7d05.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/25.575d6070.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/26.a9053bcb.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/27.1f7df432.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/28.fe31ea82.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/29.5b4335e5.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/30.8f6ec72e.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/31.bd54f1f3.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/32.176ee96b.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/33.1f0fd453.js">
+    <link rel="stylesheet" href="/EXPA--MySQL/assets/css/0.styles.d564d83c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/EXPA--MySQL/" class="home-link router-link-active"><!----> <span class="site-name">MySQL</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/EXPA--MySQL/" class="nav-link">Home</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/EXPA--MySQL/" class="nav-link">Home</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/EXPA--MySQL/introduction.html" class="sidebar-link">Introduction</a></li><li><a href="/EXPA--MySQL/basic.html" class="sidebar-link">Basic</a></li><li><a href="/EXPA--MySQL/update.html" class="sidebar-link">Update</a></li><li><a href="/EXPA--MySQL/delete.html" class="sidebar-link">Delete</a></li><li><a href="/EXPA--MySQL/console.html" class="sidebar-link">Console commands</a></li><li><a href="/EXPA--MySQL/create-tables.html" class="sidebar-link">Example of creating tables</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Insert</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Select</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Select Functions</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Advanced</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/EXPA--MySQL/advanced/cursor.html" class="sidebar-link">CURSOR</a></li><li><a href="/EXPA--MySQL/advanced/index-db.html" class="sidebar-link">INDEX</a></li><li><a href="/EXPA--MySQL/advanced/procedure.html" class="sidebar-link">PROCEDURE</a></li><li><a href="/EXPA--MySQL/advanced/transaction.html" class="sidebar-link">TRANSACTION</a></li><li><a href="/EXPA--MySQL/advanced/triggers.html" class="active sidebar-link">TRIGGERS</a></li><li><a href="/EXPA--MySQL/advanced/view.html" class="sidebar-link">VIEW</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="triggers"><a href="#triggers" aria-hidden="true" class="header-anchor">#</a> TRIGGERS</h1> <h6 id="триггер-с-1-коммандой"><a href="#триггер-с-1-коммандой" aria-hidden="true" class="header-anchor">#</a> Триггер с 1 коммандой</h6> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TRIGGER</span> <span class="token punctuation">`</span>ins_employees<span class="token punctuation">`</span> <span class="token keyword">AFTER</span> <span class="token keyword">INSERT</span> <span class="token keyword">ON</span> <span class="token punctuation">`</span>employees<span class="token punctuation">`</span>
+<span class="token keyword">FOR EACH ROW</span>
+   <span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> trigga <span class="token keyword">Set</span> <span class="token keyword">text</span> <span class="token operator">=</span> <span class="token string">'insert in employees'</span>
+</code></pre></div><h6 id="триггер-с-2-коммандами-связь-между-двумя-табnами-на-удаnение-посnе-каждой-комманды-ставить"><a href="#триггер-с-2-коммандами-связь-между-двумя-табnами-на-удаnение-посnе-каждой-комманды-ставить" aria-hidden="true" class="header-anchor">#</a> Триггер с 2 коммандами (Связь между двумя таблами на удаление) (после каждой комманды ставить - 😉</h6> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">DELIMITER</span> <span class="token comment">//</span>
+
+<span class="token keyword">CREATE</span> <span class="token keyword">TRIGGER</span> <span class="token punctuation">`</span>del_emp1<span class="token punctuation">`</span>BEFORE <span class="token keyword">DELETE</span> <span class="token keyword">ON</span> <span class="token punctuation">`</span>employees<span class="token punctuation">`</span>
+<span class="token keyword">FOR EACH ROW</span>
+<span class="token keyword">BEGIN</span>
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> log <span class="token keyword">Set</span> <span class="token keyword">action</span> <span class="token operator">=</span> <span class="token string">'delete in employees'</span><span class="token punctuation">;</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> kod <span class="token keyword">WHERE</span> kod<span class="token punctuation">.</span>id <span class="token operator">=</span> OLD<span class="token punctuation">.</span>id<span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> <span class="token comment">//</span>
+</code></pre></div><h6 id="триггер-с-if-clause"><a href="#триггер-с-if-clause" aria-hidden="true" class="header-anchor">#</a> Триггер с IF clause</h6> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">DELIMITER</span> <span class="token comment">//</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TRIGGER</span> <span class="token punctuation">`</span>likes_recounter<span class="token punctuation">`</span> <span class="token keyword">AFTER</span> <span class="token keyword">INSERT</span> <span class="token keyword">ON</span> <span class="token punctuation">`</span>likes<span class="token punctuation">`</span> 
+<span class="token keyword">FOR EACH ROW</span> 
+<span class="token keyword">BEGIN</span>
+
+<span class="token keyword">DECLARE</span> likes_count <span class="token keyword">integer</span><span class="token punctuation">;</span>
+
+<span class="token keyword">IF</span> NEW<span class="token punctuation">.</span>article_id <span class="token operator">&lt;&gt;</span> <span class="token number">0</span> <span class="token keyword">THEN</span> <span class="token keyword">BEGIN</span>
+<span class="token comment">-- INSERT INTO logs (table_name, user) VALUES(NEW.article_id, 'here');</span>
+<span class="token keyword">SET</span> <span class="token variable">@likes_count</span> :<span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> likes <span class="token keyword">WHERE</span> article_id <span class="token operator">=</span> NEW<span class="token punctuation">.</span>article_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">UPDATE</span> articles <span class="token keyword">SET</span> likes <span class="token operator">=</span> <span class="token variable">@likes_count</span> <span class="token keyword">WHERE</span> articles<span class="token punctuation">.</span>id <span class="token operator">=</span> NEW<span class="token punctuation">.</span>article_id<span class="token punctuation">;</span>
+ <span class="token keyword">END</span><span class="token punctuation">;</span>  <span class="token keyword">END</span> <span class="token keyword">IF</span><span class="token punctuation">;</span>
+
+<span class="token keyword">IF</span> NEW<span class="token punctuation">.</span>answer_id <span class="token operator">&lt;&gt;</span> <span class="token number">0</span> <span class="token keyword">THEN</span> <span class="token keyword">BEGIN</span>
+<span class="token comment">-- INSERT INTO logs (table_name, user) VALUES(NEW.article_id, 'here1');</span>
+<span class="token keyword">SET</span> <span class="token variable">@likes_count</span> :<span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> likes <span class="token keyword">WHERE</span> answer_id <span class="token operator">=</span> NEW<span class="token punctuation">.</span>answer_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">UPDATE</span> answers <span class="token keyword">SET</span> likes <span class="token operator">=</span> <span class="token variable">@likes_count</span> <span class="token keyword">WHERE</span> answers<span class="token punctuation">.</span>id <span class="token operator">=</span> NEW<span class="token punctuation">.</span>answer_id<span class="token punctuation">;</span>
+<span class="token keyword">END</span><span class="token punctuation">;</span> <span class="token keyword">END</span> <span class="token keyword">IF</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">IF</span> NEW<span class="token punctuation">.</span>question_id <span class="token operator">&lt;&gt;</span> <span class="token number">0</span>  <span class="token keyword">THEN</span> <span class="token keyword">BEGIN</span>
+<span class="token comment">-- INSERT INTO logs (table_name, user) VALUES(NEW.article_id, 'here2');</span>
+<span class="token keyword">SET</span> <span class="token variable">@likes_count</span> :<span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> likes <span class="token keyword">WHERE</span> question_id <span class="token operator">=</span> NEW<span class="token punctuation">.</span>question_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">UPDATE</span> articles <span class="token keyword">SET</span> likes <span class="token operator">=</span> <span class="token variable">@likes_count</span> <span class="token keyword">WHERE</span> question<span class="token punctuation">.</span>id <span class="token operator">=</span> NEW<span class="token punctuation">.</span>question_id<span class="token punctuation">;</span>
+<span class="token keyword">END</span><span class="token punctuation">;</span> <span class="token keyword">END</span> <span class="token keyword">IF</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- INSERT INTO logs (table_name, user) VALUES(NEW.article_id, 'here3');</span>
+
+<span class="token keyword">END</span>
+<span class="token comment">//</span>
+<span class="token keyword">DELIMITER</span> <span class="token punctuation">;</span>
+</code></pre></div><h6 id="trigger-on-update-может-не-работать"><a href="#trigger-on-update-может-не-работать" aria-hidden="true" class="header-anchor">#</a> Trigger on UPDATE (может не работать)</h6> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">CREATE</span> <span class="token keyword">TRIGGER</span> update_emp  <span class="token comment">-- назв. тригера</span>
+<span class="token keyword">ON</span> Employees <span class="token comment">-- на какую таблицу ставиться</span>
+<span class="token keyword">FOR</span> <span class="token keyword">UPDATE</span> <span class="token comment">-- на какое действие</span>
+<span class="token keyword">AS</span>
+<span class="token keyword">BEGIN</span>
+
+  <span class="token keyword">DECLARE</span> <span class="token variable">@FIO</span> NVARCHAR<span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token variable">@DATE_IN</span> <span class="token keyword">DATETIME</span>
+
+  <span class="token keyword">SET</span> <span class="token variable">@DATE_IN</span> <span class="token operator">=</span> GETDATE<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">IF</span> <span class="token keyword">UPDATE</span><span class="token punctuation">(</span>NAME<span class="token punctuation">)</span>
+   <span class="token keyword">BEGIN</span>
+    <span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> EMO_LOG <span class="token punctuation">(</span>FIO<span class="token punctuation">,</span>DATE_IN<span class="token punctuation">)</span> <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token string">'UPDATED'</span><span class="token punctuation">,</span> <span class="token variable">@DATE_IN</span><span class="token punctuation">)</span>
+   <span class="token keyword">END</span>
+<span class="token keyword">END</span>
+
+GO
+</code></pre></div><h6 id="trigger-on-delete-может-не-работать"><a href="#trigger-on-delete-может-не-работать" aria-hidden="true" class="header-anchor">#</a> Trigger on DELETE (может не работать)</h6> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">ALTER</span> <span class="token keyword">TRIGGER</span> updateemp2
+<span class="token keyword">ON</span> Employees
+<span class="token keyword">FOR</span> <span class="token keyword">DELETE</span>
+<span class="token keyword">AS</span>
+<span class="token keyword">BEGIN</span>
+<span class="token keyword">SET</span> <span class="token variable">@DATE_IN</span> <span class="token operator">=</span> GETDATE<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">--</span>
+<span class="token keyword">BEGIN</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> EMO_LOG <span class="token punctuation">(</span>FIO<span class="token punctuation">,</span>DATE_IN<span class="token punctuation">)</span> <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token string">'DELETED'</span><span class="token punctuation">,</span> <span class="token variable">@DATE_IN</span><span class="token punctuation">)</span>
+<span class="token keyword">ROLLBACK</span> <span class="token keyword">TRAN</span>
+<span class="token keyword">END</span>
+<span class="token keyword">END</span>
+GO
+</code></pre></div><h6 id="trigger-on-insert-может-не-работать"><a href="#trigger-on-insert-может-не-работать" aria-hidden="true" class="header-anchor">#</a> Trigger on INSERT (может не работать)</h6> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">ALTER</span> <span class="token keyword">TRIGGER</span> updateemp
+<span class="token keyword">ON</span> Employees
+<span class="token keyword">FOR</span> <span class="token keyword">INSERT</span>
+<span class="token keyword">AS</span>
+<span class="token keyword">BEGIN</span>
+<span class="token keyword">DECLARE</span> <span class="token variable">@FIO</span> NVARCHAR<span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token variable">@DATE_IN</span> <span class="token keyword">DATETIME</span>
+<span class="token keyword">SET</span> <span class="token variable">@DATE_IN</span> <span class="token operator">=</span> GETDATE<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">--</span>
+<span class="token keyword">BEGIN</span>
+<span class="token keyword">SELECT</span> <span class="token variable">@FIO</span> <span class="token operator">=</span> NAME <span class="token operator">+</span><span class="token string">' '</span> <span class="token operator">+</span> SURNAME <span class="token keyword">FROM</span> inserted
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> EMO_Log <span class="token punctuation">(</span>FIO<span class="token punctuation">,</span> date_in<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token variable">@FIO</span><span class="token punctuation">,</span> <span class="token variable">@DATE_IN</span><span class="token punctuation">)</span>
+<span class="token keyword">END</span>
+<span class="token keyword">END</span>
+GO
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/EXPA--MySQL/advanced/transaction.html" class="prev">
+          TRANSACTION
+        </a></span> <span class="next"><a href="/EXPA--MySQL/advanced/view.html">
+          VIEW
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/EXPA--MySQL/assets/js/8.5bf9313b.js" defer></script><script src="/EXPA--MySQL/assets/js/app.23539bff.js" defer></script>
+  </body>
+</html>
