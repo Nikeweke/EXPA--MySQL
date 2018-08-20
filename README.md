@@ -1,5 +1,5 @@
-# Angular
-## https://nikeweke.github.io/EXPA--Angular/
+# MySQL
+## https://nikeweke.github.io/EXPA--MySQL/
 
 #### Quick build and push
 ```
