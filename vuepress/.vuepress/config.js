@@ -15,6 +15,8 @@ module.exports = {
       '/delete.md',
       '/console.md',
       '/create-tables.md',
+      '/create-procedures.md',
+      '/create-triggers.md',
       {
         title: 'Insert',
         collapsable: true,

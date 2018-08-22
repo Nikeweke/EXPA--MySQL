@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ex. of creating procedures | MySQL</title>
+    <meta name="description" content="Experience from mysql world">
+    
+    
+    <link rel="preload" href="/EXPA--MySQL/assets/css/0.styles.631b5b73.css" as="style"><link rel="preload" href="/EXPA--MySQL/assets/js/app.c8233450.js" as="script"><link rel="preload" href="/EXPA--MySQL/assets/js/13.9867f9f3.js" as="script"><link rel="prefetch" href="/EXPA--MySQL/assets/js/17.ab234c5e.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/2.cda51ec0.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/3.a33696fc.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/4.c25d7466.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/5.b903cd0e.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/6.a1e407de.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/7.a2b46d16.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/8.89af5fcc.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/9.852299ac.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/10.9076388b.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/11.ef36a161.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/12.bec20e11.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/14.31420757.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/15.8a691d4d.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/16.30e07555.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/18.2527d651.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/19.21691147.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/20.61d83e0f.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/21.165e5a52.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/22.8e480fa9.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/23.1f5e6a66.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/24.667a10c1.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/25.31bf9559.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/26.5b9f901e.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/27.f65d7282.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/28.8c074d3f.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/29.7620e4dd.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/30.251d7d42.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/31.6c967fd9.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/32.36ec457e.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/33.9b7fe50f.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/34.06050df8.js"><link rel="prefetch" href="/EXPA--MySQL/assets/js/35.b5b94094.js">
+    <link rel="stylesheet" href="/EXPA--MySQL/assets/css/0.styles.631b5b73.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/EXPA--MySQL/" class="home-link router-link-active"><!----> <span class="site-name">MySQL</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/EXPA--MySQL/" class="nav-link">Home</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/EXPA--MySQL/" class="nav-link">Home</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/EXPA--MySQL/introduction.html" class="sidebar-link">Introduction</a></li><li><a href="/EXPA--MySQL/basic.html" class="sidebar-link">Basic</a></li><li><a href="/EXPA--MySQL/update.html" class="sidebar-link">Update</a></li><li><a href="/EXPA--MySQL/delete.html" class="sidebar-link">Delete</a></li><li><a href="/EXPA--MySQL/console.html" class="sidebar-link">Console commands</a></li><li><a href="/EXPA--MySQL/create-tables.html" class="sidebar-link">Ex. of creating tables</a></li><li><a href="/EXPA--MySQL/create-procedures.html" class="active sidebar-link">Ex. of creating procedures</a></li><li><a href="/EXPA--MySQL/create-triggers.html" class="sidebar-link">Ex. of creating triggers</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Insert</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Select</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Select Functions</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Advanced</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="ex-of-creating-procedures"><a href="#ex-of-creating-procedures" aria-hidden="true" class="header-anchor">#</a> Ex. of creating procedures</h1> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token comment">/************************************************************
+*   Вызов процедуры в php
+*
+***********************************************************/</span>
+ <span class="token keyword">CALL</span> ins_EMP<span class="token punctuation">(</span><span class="token string">'$pass'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+
+
+<span class="token comment">/************************************************************
+*  Выполнение 1 комманд в процедуре
+*
+***********************************************************/</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> ins_del<span class="token punctuation">(</span>vall <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">insert</span> <span class="token keyword">into</span> kod<span class="token punctuation">(</span>kod<span class="token punctuation">)</span> <span class="token keyword">values</span> <span class="token punctuation">(</span>vall<span class="token punctuation">)</span>
+
+
+
+
+<span class="token comment">/************************************************************
+*  Выполнение 2 комманд в процедуре (После каждой комманды - ;)
+*
+***********************************************************/</span>
+<span class="token keyword">DELIMITER</span> <span class="token comment">//</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> insert_emp<span class="token punctuation">(</span>var1 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>var2 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>var3 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>var4 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>var5 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">BEGIN</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employees<span class="token punctuation">(</span>surname<span class="token punctuation">,</span> name<span class="token punctuation">,</span> posada<span class="token punctuation">,</span> kraina<span class="token punctuation">)</span> <span class="token keyword">VALUES</span><span class="token punctuation">(</span>var1<span class="token punctuation">,</span> var2<span class="token punctuation">,</span> var3<span class="token punctuation">,</span> var4<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> kod<span class="token punctuation">(</span>kod<span class="token punctuation">)</span> <span class="token keyword">VALUES</span><span class="token punctuation">(</span>var5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">END</span> <span class="token comment">//</span>
+
+
+
+
+<span class="token comment">/************************************************************
+*  Выполнение 3 комманд в процедуре (После каждой комманды - ;)
+*
+***********************************************************/</span>
+<span class="token keyword">DELIMITER</span> <span class="token comment">//</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TRIGGER</span> <span class="token punctuation">`</span>del_user_with_diaries_and_settings<span class="token punctuation">`</span> BEFORE <span class="token keyword">DELETE</span> <span class="token keyword">ON</span> <span class="token punctuation">`</span>foodcontrol<span class="token punctuation">`</span><span class="token punctuation">.</span><span class="token punctuation">`</span>users<span class="token punctuation">`</span>
+<span class="token keyword">FOR EACH ROW</span>
+<span class="token keyword">BEGIN</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> log<span class="token punctuation">(</span><span class="token keyword">action</span><span class="token punctuation">,</span> table_name<span class="token punctuation">,</span> <span class="token keyword">user</span><span class="token punctuation">)</span> <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token string">'user was deleted'</span><span class="token punctuation">,</span> <span class="token string">'Users'</span><span class="token punctuation">,</span> OLD<span class="token punctuation">.</span>email<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> diaries <span class="token keyword">WHERE</span> diaries<span class="token punctuation">.</span>user_id <span class="token operator">=</span> OLD<span class="token punctuation">.</span>id<span class="token punctuation">;</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> user_settings <span class="token keyword">WHERE</span> user_settings<span class="token punctuation">.</span>user_id <span class="token operator">=</span> OLD<span class="token punctuation">.</span>id<span class="token punctuation">;</span>
+<span class="token keyword">END</span> <span class="token comment">//</span>
+
+
+
+<span class="token comment">/************************************************************
+*  Процедура вставки с параметрами 1 - 4 ШТ. (После каждой комманды - ;)
+*
+***********************************************************/</span>
+<span class="token keyword">DELIMITER</span> <span class="token comment">//</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> inserter<span class="token punctuation">(</span>choice <span class="token keyword">int</span><span class="token punctuation">,</span>
+
+                          table_var <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+                          field_1 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                          field_2 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                          field_3 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                          field_4 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+                          valu_1 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                          valu_2 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                          valu_3 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                          valu_4 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">BEGIN</span>
+
+<span class="token keyword">IF</span><span class="token punctuation">(</span>choice <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> table_var<span class="token punctuation">(</span>field_1<span class="token punctuation">)</span> <span class="token keyword">VALUES</span><span class="token punctuation">(</span>valu_1<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+
+<span class="token keyword">ELSEIF</span><span class="token punctuation">(</span>choice <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> table_var<span class="token punctuation">(</span>field_1<span class="token punctuation">,</span>field_2<span class="token punctuation">)</span> <span class="token keyword">VALUES</span><span class="token punctuation">(</span>valu_1<span class="token punctuation">,</span> valu_2<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+
+<span class="token keyword">ELSEIF</span><span class="token punctuation">(</span>choice <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> table_var<span class="token punctuation">(</span>field_1<span class="token punctuation">,</span>field_2<span class="token punctuation">,</span>field_3<span class="token punctuation">)</span> <span class="token keyword">VALUES</span><span class="token punctuation">(</span>valu_1<span class="token punctuation">,</span> valu_2<span class="token punctuation">,</span> valu_3<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+
+<span class="token keyword">ELSEIF</span><span class="token punctuation">(</span>choice <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> table_var<span class="token punctuation">(</span>field_1<span class="token punctuation">,</span> field_2<span class="token punctuation">,</span> field_3<span class="token punctuation">,</span> field_4<span class="token punctuation">)</span> <span class="token keyword">VALUES</span><span class="token punctuation">(</span>valu_1<span class="token punctuation">,</span> valu_2<span class="token punctuation">,</span> valu_3<span class="token punctuation">,</span> valu_4<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> <span class="token keyword">IF</span><span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> <span class="token comment">//</span>
+
+
+
+<span class="token comment">/************************************************************
+*  Процедура вывода с параметром (После каждой комманды - ;)
+*
+***********************************************************/</span>
+<span class="token keyword">DELIMITER</span> <span class="token comment">//</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">PROCEDURE</span> selecter<span class="token punctuation">(</span>choice <span class="token keyword">int</span><span class="token punctuation">,</span> var1 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span> var2 <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment">-- var 1 - current user</span>
+<span class="token comment">-- var 2 - another member</span>
+<span class="token comment">-- choice - selector</span>
+
+<span class="token keyword">BEGIN</span>
+
+<span class="token comment">-- TODOIST</span>
+<span class="token keyword">IF</span><span class="token punctuation">(</span>choice <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span>
+<span class="token keyword">SELECT</span> todoist_id<span class="token punctuation">,</span> todoist_article<span class="token punctuation">,</span> todoist_done<span class="token punctuation">,</span> date_format<span class="token punctuation">(</span>todoist_time<span class="token punctuation">,</span><span class="token string">'%b. %e, %Y, %k:%i'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token keyword">time</span> <span class="token keyword">FROM</span> todoist <span class="token keyword">WHERE</span> todoist_visible <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">AND</span> todoist_user <span class="token operator">=</span> var1 <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> todoist_id <span class="token keyword">DESC</span> <span class="token punctuation">;</span>
+
+<span class="token comment">-- MESSAGES</span>
+<span class="token keyword">ELSEIF</span><span class="token punctuation">(</span>choice <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span>
+<span class="token keyword">SELECT</span> messages<span class="token punctuation">.</span>author<span class="token punctuation">,</span> date_format<span class="token punctuation">(</span><span class="token keyword">time</span><span class="token punctuation">,</span><span class="token string">'%T (%e-%m-%y)'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> <span class="token keyword">time</span><span class="token punctuation">,</span> messages<span class="token punctuation">.</span>towho<span class="token punctuation">,</span> messages<span class="token punctuation">.</span>message <span class="token keyword">FROM</span> messages <span class="token keyword">WHERE</span> author <span class="token operator">=</span> var1 <span class="token operator">AND</span> towho <span class="token operator">=</span> var2 <span class="token operator">OR</span> author <span class="token operator">=</span> var2 <span class="token operator">AND</span> towho <span class="token operator">=</span> var1 <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> messages<span class="token punctuation">.</span>id <span class="token punctuation">;</span>
+
+<span class="token comment">-- FRIENDS (1 Request: All members)</span>
+<span class="token keyword">ELSEIF</span><span class="token punctuation">(</span>choice <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span>
+<span class="token keyword">SELECT</span> members<span class="token punctuation">.</span>id<span class="token punctuation">,</span> members<span class="token punctuation">.</span>nickname<span class="token punctuation">,</span> members<span class="token punctuation">.</span>email<span class="token punctuation">,</span> images<span class="token punctuation">.</span>img_name <span class="token keyword">FROM</span> members<span class="token punctuation">,</span>images <span class="token keyword">WHERE</span> members<span class="token punctuation">.</span>id <span class="token operator">=</span> images<span class="token punctuation">.</span>id_user <span class="token operator">AND</span> members<span class="token punctuation">.</span>id <span class="token operator">!=</span> var1 <span class="token punctuation">;</span>
+
+
+<span class="token comment">-- FRIENDS (2 Request: Friendships)</span>
+<span class="token keyword">ELSEIF</span><span class="token punctuation">(</span>choice <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span>
+<span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token keyword">user</span><span class="token punctuation">,</span> friend<span class="token punctuation">,</span> <span class="token keyword">status</span><span class="token punctuation">,</span> notice <span class="token keyword">FROM</span> friends <span class="token keyword">WHERE</span> <span class="token keyword">user</span> <span class="token operator">=</span> var1 <span class="token operator">AND</span> friend <span class="token operator">=</span> var2 <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> id <span class="token keyword">DESC</span> <span class="token keyword">LIMIT</span> <span class="token number">2</span><span class="token punctuation">)</span>
+ <span class="token keyword">UNION</span>
+ <span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token keyword">user</span><span class="token punctuation">,</span> friend<span class="token punctuation">,</span> <span class="token keyword">status</span><span class="token punctuation">,</span> notice <span class="token keyword">FROM</span> friends <span class="token keyword">WHERE</span> <span class="token keyword">user</span> <span class="token operator">=</span> var2 <span class="token operator">AND</span> friend <span class="token operator">=</span> var1 <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> id <span class="token keyword">DESC</span> <span class="token keyword">LIMIT</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">-- MEMBERS (1 Request: All members)</span>
+<span class="token keyword">ELSEIF</span><span class="token punctuation">(</span>choice <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span>
+<span class="token keyword">SELECT</span> members<span class="token punctuation">.</span>id<span class="token punctuation">,</span> members<span class="token punctuation">.</span>nickname<span class="token punctuation">,</span> members<span class="token punctuation">.</span>email<span class="token punctuation">,</span> images<span class="token punctuation">.</span>img_name <span class="token keyword">FROM</span> members<span class="token punctuation">,</span>images <span class="token keyword">WHERE</span> members<span class="token punctuation">.</span>id <span class="token operator">=</span> images<span class="token punctuation">.</span>id_user <span class="token operator">AND</span> members<span class="token punctuation">.</span>id <span class="token operator">!=</span> var1 <span class="token punctuation">;</span>
+
+
+<span class="token comment">-- MEMBERS (2 Request: Current user's requests for frienship)</span>
+<span class="token keyword">ELSEIF</span><span class="token punctuation">(</span>choice <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">user</span><span class="token punctuation">,</span>friend <span class="token keyword">FROM</span> friends <span class="token keyword">WHERE</span> <span class="token keyword">user</span> <span class="token operator">=</span> var1 <span class="token operator">AND</span> friend <span class="token operator">=</span> var2 <span class="token punctuation">;</span>
+
+
+<span class="token comment">-- MEMBERS (3 Request: Friendships)</span>
+<span class="token keyword">ELSEIF</span><span class="token punctuation">(</span>choice <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">)</span> <span class="token keyword">THEN</span>
+<span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token keyword">user</span><span class="token punctuation">,</span> friend<span class="token punctuation">,</span> <span class="token keyword">status</span><span class="token punctuation">,</span> notice <span class="token keyword">FROM</span> friends <span class="token keyword">WHERE</span> <span class="token keyword">user</span> <span class="token operator">=</span> var1 <span class="token operator">AND</span> friend <span class="token operator">=</span> var2 <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> id <span class="token keyword">DESC</span> <span class="token keyword">LIMIT</span> <span class="token number">2</span><span class="token punctuation">)</span>
+ <span class="token keyword">UNION</span>
+<span class="token punctuation">(</span><span class="token keyword">SELECT</span> <span class="token keyword">user</span><span class="token punctuation">,</span> friend<span class="token punctuation">,</span> <span class="token keyword">status</span><span class="token punctuation">,</span> notice <span class="token keyword">FROM</span> friends <span class="token keyword">WHERE</span> <span class="token keyword">user</span> <span class="token operator">=</span> var2 <span class="token operator">AND</span> friend <span class="token operator">=</span> var1 <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> id <span class="token keyword">DESC</span> <span class="token keyword">LIMIT</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> <span class="token keyword">IF</span><span class="token punctuation">;</span>
+
+<span class="token keyword">END</span> <span class="token comment">//</span>
+
+
+<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span> <span class="token keyword">USING</span> : $query <span class="token operator">=</span> $db<span class="token operator">-</span><span class="token operator">&gt;</span>query<span class="token punctuation">(</span><span class="token string">&quot;CALL selecter(1,$current_user,0)&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        бЕЗ КАВЫЧЕК
+
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/EXPA--MySQL/create-tables.html" class="prev">
+          Ex. of creating tables
+        </a></span> <span class="next"><a href="/EXPA--MySQL/create-triggers.html">
+          Ex. of creating triggers
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/EXPA--MySQL/assets/js/13.9867f9f3.js" defer></script><script src="/EXPA--MySQL/assets/js/app.c8233450.js" defer></script>
+  </body>
+</html>
